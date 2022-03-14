@@ -16,6 +16,4 @@
       ddl-auto: update
       naming:
         implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
-spring:
-  application:
-    name: application
+
