@@ -10,7 +10,6 @@ management:
       exposure:
         include: '*'
 server:
-  port: 8761
 spring:
   application:
     name: applicationEureka
