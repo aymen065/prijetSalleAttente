@@ -16,4 +16,5 @@ spring:
       ddl-auto: update
       naming:
         implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
-
+  application:
+      name: salleAttente
