@@ -2,7 +2,7 @@ server:
   port: 8060
 spring:
   application:
-    name: getway
+    name: gateway
   cloud:
   gateway:
     routes:
