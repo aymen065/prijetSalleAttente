@@ -2,31 +2,31 @@ server:
   port: 8060
 spring:
   application:
-    name: gateway
+    name: getway
   cloud:
-  gateway:
-    routes:
-    - id: MedecinModule
-      uri: lb://medecin
-      predicates:
-      - Path=/salle/patient/**
-    - id: PatientModule
-      uri: lb://patient
-      predicates:
-      - Path=/sallepatient/**
-    - id: AdresseModule
-      uri: lb://adresse
-      predicates:
-      - Path=/salle/adresse/**
-    - id: HoraireModule
-      uri: lb://horaire
-      predicates:
-      - Path=/salle/horaire/**
-    - id: RendezVousModule
-      uri: lb://RendezVous
-      predicates:
-      - Path=/salle/rendezVous/**
+    gateway:
+      routes:
+      - id: MedecinModule
+        uri: lb://medecin
+        predicates:
+        - Path=/salle/patient/**
+      - id: PatientModule
+        uri: lb://patient
+        predicates:
+        - Path=/sallepatient/**
+      - id: AdresseModule
+        uri: lb://adresse
+        predicates:
+        - Path=/salle/adresse/**
+      - id: HoraireModule
+        uri: lb://horaire
+        predicates:
+        - Path=/salle/horaire/**
+      - id: RendezVousModule
+        uri: lb://RendezVous
+        predicates:
+        - Path=/salle/rendezVous/**
 eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
+    client:
+      service-url:
+        defaultZone: http://localhost:8761/eureka/
