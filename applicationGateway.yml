@@ -8,11 +8,11 @@ spring:
       - id: MedecinModule
         uri: lb://medecin
         predicates:
-        - Path=/salle/patient/**
+        - Path=/salle/medecin/**
       - id: PatientModule
         uri: lb://patient
         predicates:
-        - Path=/sallepatient/**
+        - Path=/salle/patient/**
       - id: AdresseModule
         uri: lb://adresse
         predicates:
