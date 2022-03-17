@@ -13,6 +13,10 @@ spring:
         uri: lb://PatientRestClient
         predicates:
         - Path=/salle/patient/**
+      - id: PatientModule
+        uri: lb://Patient
+        predicates:
+        - Path=/salle/patient/**
       - id: AdresseModule
         uri: lb://adresse
         predicates:
