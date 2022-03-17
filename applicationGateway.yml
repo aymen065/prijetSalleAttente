@@ -9,10 +9,6 @@ spring:
         uri: lb://medecin
         predicates:
         - Path=/salle/medecin/**
-      - id: PatientRestClientModule
-        uri: lb://PatientRestClient
-        predicates:
-        - Path=/salle/patient/**
       - id: PatientModule
         uri: lb://Patient
         predicates:
