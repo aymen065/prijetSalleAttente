@@ -22,7 +22,7 @@ spring:
         predicates:
         - Path=/salle/horaire/**
       - id: RendezVousModule
-        uri: lb://RendezVous
+        uri: lb://rendezVous
         predicates:
         - Path=/salle/rendezVous/**
 
