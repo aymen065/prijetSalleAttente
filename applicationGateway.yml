@@ -26,10 +26,7 @@ spring:
         predicates:
         - Path=/salle/rendezVous/**
 
-eureka:
-    client:
-      service-url:
-        defaultZone: http://localhost:8761/eureka/
+
     
         
           
